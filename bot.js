@@ -22,6 +22,10 @@ client.on('message', message => {
     	message.reply('71.178.14.232');
   	}
 });
-
+client.on('message', message => {
+    if (message.content === 'do you know dae wae') {
+    	message.reply('Yes I know dae wae brother');
+  	}
+    
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
