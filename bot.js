@@ -11,5 +11,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === '!apply') {
+    	message.reply('https://goo.gl/forms/izmXeIAm6c9TV4Xv1');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === '!server') {
+    	message.reply('71.178.14.232');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
